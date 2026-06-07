@@ -1,0 +1,5 @@
+Indice provisional de hechos documentales PARES 1500 a 1600
+
+El indice recoge documentos fechados entre 1500 y 1600 procedentes de fondos historicos. Muchos documentos son escaneos sin estructura definida y requieren OCR, normalizacion paleografica, extraccion de entidades y vinculacion con hechos conocidos.
+
+Un hecho identificado es la preparacion de armadas en el Atlantico durante la decada de 1580. Otro hecho corresponde al intercambio de cartas sobre defensa de plazas y puertos. Para cada hecho se recomienda conservar referencia al documento escaneado, fecha o rango temporal, entidades, resumen y confianza de extraccion.

@@ -1,0 +1,89 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.python-version
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Paquetes / builds
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Type checkers / linters
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# =========================
+# Variables de entorno
+# =========================
+.env
+.env.*
+
+# =========================
+# Runtime / datos generados
+# =========================
+runtime/
+*.db
+*.sqlite
+*.sqlite3
+
+# PDFs generados en ejecución fuera de docs
+exports/
+generated/
+output/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# IDEs / editores
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Archivos temporales
+# =========================
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PARES AI RAG</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Arquitecturas con IA - prototipo</p>
+      <h1>PARES AI RAG</h1>
+      <p>Consulta de documentos historicos mediante hechos indexados y lenguaje natural.</p>
+    </div>
+    <div class="auth-card">
+      <p id="sessionLabel">Sin sesion</p>
+      <button id="loginAdmin">Entrar como Admin</button>
+      <button id="loginUser" class="secondary">Entrar como User</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>1. Administracion</h2>
+      <p>Los administradores pueden cargar documentos, revisar trazas y controlar el pipeline.</p>
+      <div class="row">
+        <button id="seedSamples">Cargar documentos demo</button>
+        <button id="loadAudit" class="secondary">Ver trazas</button>
+        <button id="loadModel" class="secondary">Control modelo</button>
+      </div>
+      <label class="upload">
+        Subir documento .txt o .pdf
+        <input id="fileInput" type="file" accept=".txt,.md,.pdf" />
+      </label>
+      <button id="uploadBtn">Subir documento</button>
+      <pre id="adminOutput" class="output"></pre>
+    </section>
+
+    <section class="card">
+      <h2>2. Buscador inicial de hechos</h2>
+      <p>Explora hechos registrados y su indice de metadatos.</p>
+      <div class="row">
+        <input id="searchInput" placeholder="San Miguel, naves, Azores..." />
+        <button id="searchBtn">Buscar</button>
+        <button id="factsBtn" class="secondary">Ver todos</button>
+      </div>
+      <div id="factsList" class="facts"></div>
+    </section>
+
+    <section class="card wide">
+      <h2>3. Consulta en lenguaje natural</h2>
+      <textarea id="questionInput" rows="6">Necesito el nombre de las naves espanolas que participaron en las jornadas de la Batalla de San Miguel, indicando capitanes, arqueo, marineria, nave capitana y almiranta.</textarea>
+      <div class="row">
+        <button id="askBtn">Preguntar</button>
+        <button id="askPdfBtn" class="secondary">Descargar PDF</button>
+      </div>
+      <pre id="answerOutput" class="output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <span>Demo local: sustituir por IDP OIDC, OCR cloud, vector DB y LLM gestionado en produccion.</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
